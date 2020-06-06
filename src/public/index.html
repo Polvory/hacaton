@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!-- подключение скриптов для тютера -->
+    <script src="../js/scorm_websoft.js"></script>
+    <script type="text/javascript" src="../js/module.js"></script>
+    <!-- скрипт для завершения сесии -->
+<script >
+  function test(){
+    switch(sVersion){case"1.2":"try to save lesson_status (completed) :"+ISCORM_SET("cmi.core.lesson_status","completed")+"\n","try to save score.max (99) :"+ISCORM_SET("cmi.core.score.max","99")+"\n","try to save score.raw (77) :"+ISCORM_SET("cmi.core.score.raw","77")+"\n","try to save score.min (11) :"+ISCORM_SET("cmi.core.score.min","11")+"\n","try to save objectives.0.id (myObjective) :"+ISCORM_SET("cmi.objectives.0.id","myObjective")+"\n","try to save objectives.0.status (completed) :"+ISCORM_SET("cmi.objectives.0.status","completed")+"\n","try to save objectives.0.score.max (89) :"+ISCORM_SET("cmi.objectives.0.score.max","89")+"\n","try to save objectives.0.score.raw (66) :"+ISCORM_SET("cmi.objectives.0.score.raw","66")+"\n","try to save objectives.0.score.min (22) :"+ISCORM_SET("cmi.objectives.0.score.min","22")+"\n";break;case"2004":"try to save completion_status (completed) :"+ISCORM_SET("cmi.completion_status","completed")+"\n","try to save progress_measure (0.5) :"+ISCORM_SET("cmi.progress_measure","0.5")+"\n","try to save completion_threshold (0.55) :"+ISCORM_SET("cmi.completion_threshold","0.55")+"\n","try to save scaled_passing_score (85) :"+ISCORM_SET("cmi.scaled_passing_score","85")+"\n","try to save success_status (passed) :"+ISCORM_SET("cmi.success_status","passed")+"\n","try to save score.max (99) :"+ISCORM_SET("cmi.score.max","99")+"\n","try to save score.raw (77) :"+ISCORM_SET("cmi.score.raw","100")+"\n","try to save score.min (11) :"+ISCORM_SET("cmi.score.min","11")+"\n","try to save objectives.0.id (s1) :"+ISCORM_SET("cmi.objectives.0.id","s1")+"\n","try to save objectives.0.success_status (passed) :"+ISCORM_SET("cmi.objectives.0.success_status","passed")+"\n","try to save objectives.0.completion_status (completed) :"+ISCORM_SET("cmi.objectives.0.completion_status","completed")+"\n","try to save objectives.0.progress_measure (0.5) :"+ISCORM_SET("cmi.objectives.0.progress_measure","0.5")+"\n","try to save objectives.0.score.max (89) :"+ISCORM_SET("cmi.objectives.0.score.max","100")+"\n","try to save objectives.0.score.raw (66) :"+ISCORM_SET("cmi.objectives.0.score.raw","66")+"\n","try to save objectives.0.score.min (22) :"+ISCORM_SET("cmi.objectives.0.score.min","0")+"\n","try to save objectives.0.description (AAA ?? ABC) :"+ISCORM_SET("cmi.objectives.0.description","AAA ?? ABC")+"\n"}ISCORM_COMMIT(),
+  // alert("Жопа");
+  window.close()}
+
+
+</script>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+  onload="ISCORM_INITIALIZE(); setTimeout(start, 1000)"  onunload="ISCORM_TERMINATE()" onbeforeunload="ISCORM_TERMINATE()">
+   
+    -->
+    <title>React App</title>
+  </head>
+  <body >
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+
+
+
+
+</html>
