@@ -68,24 +68,25 @@ const [vvodim, setVvodim] = useState(null);
 function test(){
 
 
-const trainingData = [
+  const trainingData = [
+    {input: ["Общие положения","Должностные обязанности","Права"], output: "Инструкция"},
+    {input: ["Договор","Положение","Так то"], output: "Другое"},
+    {input: ["Права","Должностные обязанности","Ответственность"], output: "Инструкция"},
+    {input: ["Права","Должностные обязанности","Общие положения"], output: "Инструкция"},
+    {input: ["Договор","тяжело","тяжело"], output: "Другое"},
+  ];
+  
+  const lstm = new brain.recurrent.LSTM();
+  const result = lstm.train(trainingData, {
+    iterations: 1500,
+    log: details => console.log(details),
+    errorThresh: 0.011
+  });
+  
+  const run1 = lstm.run(["Общие положения","Права","Должностные обязанности"]);
 
-  { input: "Плохо", output: 0  },
-  { input: "Хорошо", output: 1  },
-  { input: "Очень плохо", output: 0  },
-  { input: "Супер плохо", output: 0  }
+  
 
-
-];
-
-const lstm = new brain.recurrent.LSTM();
-const result = lstm.train(trainingData, {
-  iterations: 1500,
-  log: details => console.log(details),
-  errorThresh: 0.011
-});
-
-const run1 = lstm.run("Плохо");
 
 
 console.log('Итак: ' +  run1);
