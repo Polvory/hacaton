@@ -1,0 +1,107 @@
+body{
+  background-color: var(--fon);
+}
+
+
+textarea{
+  background-color:var(--Progress) !important;
+  color: var(--p) !important;
+}
+
+/* КНОПКИ */
+button, input, textarea{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+/* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+
+button:active,textarea:focus , button:focus { outline: none; }
+input:active,textarea:active , input:focus { outline: none; }
+
+.Accent{
+  color:var(--Accent) ;
+}
+
+
+p{
+  color: var(--p);
+}
+h1, h2, h3, h4, h5, h6{
+  color: var(--titel);
+}
+
+.Progress{
+  background-color:var(--Progress);
+}
+
+.ElAccent{
+color: var(--ElAccent);
+}
+
+.Substrates{
+  background-color:var(--Substrates);
+}
+
+
+.Substrates p{
+  color: var(--SubstratesP);
+}
+.buttonSecond{
+background-color:#444857;
+}
+
+
+
+
+.FirstAccentButton{
+  padding: 9px 10px 9px 10px;
+  background-color: var(--Accent);
+  color: var(--ElAccent);
+  cursor: pointer;
+  border-radius: 4px;
+  transition:0.2s;
+}
+
+.SecondAccentButton{
+  padding: 9px 10px 9px 10px;
+  background-color: var(--Accenbutton);
+  color: var(--titel);
+  cursor: pointer;
+  border-radius: 4px;
+  transition:0.2s;
+}
+
+
+
+
+
+
+/* Кнопка второстепенная */
+.buttonSecondary{
+  padding: 9px 10px 9px 10px;
+  border: 1px solid var(--SecondarybuttonLine);
+  color: var(--Secondarybutton);
+  cursor: pointer;
+  border-radius: 4px;
+  transition:0.2s;
+}
+
+.buttonSecondary:hover{
+  opacity:1;
+  /* backdrop-filter: contrast(40%); */
+}
+
+.buttonSecondary:active{
+ 
+  transform:scale(0.9);
+  opacity:0.8;
+}
+
+
+
+
